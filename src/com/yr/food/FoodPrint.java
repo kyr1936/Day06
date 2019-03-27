@@ -17,8 +17,8 @@ public class FoodPrint {
 				System.out.println("개수 : " + foods[i].sell);
 				System.out.println("가격 : " + foods[i].price);
 				
-				Food[] allFoods = new Food[foods.length];
-				allFoods[i]=foods[i];
+		//		Food[] allFoods = new Food[foods.length];
+		//		allFoods[i]=foods[i];
 				
 				foods[i].sell = 0;
 				foods[i].price=0;
@@ -36,11 +36,11 @@ public class FoodPrint {
 
 	public void allprint(Food[] allFoods) {    // 총 판매
 
-		for(int i=0; i<foods.length;i++) {
+	/*	for(int i=0; i<foods.length;i++) {
 			System.out.println("메뉴 : " +foods[i].menuName);
 			System.out.println("총 판매 개수 : " + foods[i].sell);
 			System.out.println("총 판매 가격 : " + foods[i].price);
-		}
+		} */
 	}
 
 
