@@ -20,17 +20,24 @@ public class MenuController {		// 메뉴 선택
 			int select = sc.nextInt();
 
 			if (select==1) {
-				for(int i=0; i<foods.length; i++) {
-					System.out.println(i+1 +".   "+ foods[i].name + ",  " + foods[i].price);
+				while(true) {
+					for(int i=0; i<foods.length; i++) {
+						System.out.println(i+1 +".   "+ foods[i].name + ",  " + foods[i].price);
 
-				} System.out.println(foods.length+1 + ". 주문하기");
-				select =sc.nextInt();
-				System.out.println("수량 입력");
-				int c = sc.nextInt();
-
+					} 
+					System.out.println(foods.length+1 + ". 주문하기");
+					select =sc.nextInt();
+					if(select<=foods.length) {
+					System.out.println("수량 입력");
+					counts[select-1] = sc.nextInt();
+					} else {
+						menuCount.orderView(foods, counts);    //영수증 출력
+						break;
+					}
+				}
 
 			} else {
-				menuCount.count();
+				menuCount.count(foods);
 
 				check =!check;
 			}	

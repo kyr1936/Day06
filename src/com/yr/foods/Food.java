@@ -4,6 +4,6 @@ public class Food {
 	String name;
 	int price;
 	int amount;
-	int count;
+	int count;   // 누적판매수량
 	
 }
