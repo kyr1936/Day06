@@ -1,5 +1,5 @@
 package com.yr.foods;
 
-public class MenuCount {
+public class MenuAdd {
 
 }
