@@ -30,7 +30,7 @@ public class MenuView {            // 영수증 출력, 결산 출력
 
 	public void count(Food[] foods) {
 		int sum=0;
-		for(int i =0; i<foods.length;i++) {
+		for(int i =0; i<foods.length;i++) {  
 			System.out.println("메뉴명 : " + foods[i].name);
 			System.out.println("판매 수 : " + foods[i].count);
 			System.out.println("판매액 : " + foods[i].count*foods[i].price);
